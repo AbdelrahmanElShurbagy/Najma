@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae649f4abc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/najmaHome.css">
+    <title>NAJMA HOME</title>
+</head>
+<body>
+<nav>
+    <div class="navLeft">
+        <button onclick="searchPopUp()"  class="navOne-btns"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="navOne-btns"><i class="fa-solid fa-location-dot"></i></button>
+        <button class="navOne-btns"><i class="fa-solid fa-globe"></i></button>
+
+    </div>
+    <div class="navCenter">
+        <img src="../img/index logo.png" class="NajmaLogo">
+
+    </div>
+    <div class="navRight">
+
+        <button class="navOne-btns" id="yourUsername"></button>
+       
+        
+        
+        <button class="navOne-btns"><i class="fa-regular fa-heart"></i></button>
+        <button class="navOne-btns"><i class="fa-solid fa-basket-shopping"></i></button>
+        <button onclick="profile() " id="profile-btn" class="navOne-btns"><i class="fa-regular fa-user"></i></button>
+
+
+    </div>
+</nav>
+
+<div onmouseleave="Close()" id="SearchPopUp">
+    <div class="Search-cont">
+        <div class="Search-wrapper">
+        <input class="search-input" type="text" placeholder="Search entire store here ....."><button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+</div>
+
+
+    <div  id="profilePopUp" class="signInOrCreate-cont">
+        <h2>Sign In or Create an Account</h2>
+        <p>With an account you can check out faster, view your online order history and access your shopping bag or saved items from any device.</p>
+        <button onclick="createAccount()" class="SignInOrUp-btn"> Create Account</button>
+        <button onclick="signIn()" class="SignInOrUp-btn">Sign In</button>
+
+
+
+</div>
+
+<div class="signIn-cont" id="signInPopUp">
+    <h2>Sign In</h2>
+    <input  class="signIn-input" id="username-input" type="text" required placeholder="Username"><br>
+    <input class="signIn-input" type="password" required placeholder="password"><br>
+    <a href="#">Forgot password?</a><br>
+    <button onclick=" welcomeName()" id="signIn-btn">Sign in</button>
+
+    <div class="contWith-wrapper">
+    <button class="contWith-btns"><i class="fa-brands fa-facebook"></i> Sign in with Facebook</button><br>
+    <button class="contWith-btns"><i class="fa-brands fa-google"></i> Sign in with Google</button>
+    
+</div>
+</div>
+<div class="signIn-cont" id="CreateAcoountPopUp">
+    <h2>Create Account</h2>
+    
+    <input  class="signIn-input" id="fullName-input" type="text" name="fullName" required placeholder=" Full Name"><br>
+    <input  class="signIn-input" id="createUser-input"  type="text" name="userName" required placeholder=" Create Username"><br>
+    <input  class="signIn-input"  type="email" name="Email" required placeholder=" Email"><br>
+    <input  class="signIn-input"  type="password" name="password" required placeholder=" Create password"><br>
+    <input  class="signIn-input"  type="password" name="rePassword" required placeholder=" re-enter password"><br>
+   
+    <a href="#">Forgot password?</a><br>
+    <button onclick="createUsername()" id="signIn-btn">Continue</button>
+ 
+
+    <div class="contWith-wrapper">
+    <button class="contWith-btns"><i class="fa-brands fa-facebook"></i> Sign in with Facebook</button><br>
+    <button class="contWith-btns"><i class="fa-brands fa-google"></i> Sign in with Google</button>
+    
+</div>
+</div>
+<div class="navTwo">
+ 
+    <button class="navTwo-btns"> New In</button>
+    <button class="navTwo-btns"> Gifts</button>
+    <button class="navTwo-btns"> Shop All</button>
+    <button class="navTwo-btns"> Offers</button>
+    <button class="navTwo-btns"> Men's Collection</button>
+
+</div>
+
+<div  onmouseover="Close()" class="slideShow" id="Background">
+    <img class="backgroundImg" src="../img/background.png" >
+    <h1 class="title">ELEVATE your ELEGANCE</h1>
+    <button class="explore-btn">explore</button>
+</div>
+
+<div class="newCollections-cont">
+ 
+    <div class="h2-wrapper">
+        <h2>NEW COLLECTION</h2>
+    </div>
+    <div class="catalog-cont">
+        <div class="item-card">
+            
+            <div id="crystalStone" class="items-imgs"> </div>
+        <p>Elevate Your Elegance Set </p>
+        <P>800 EGP</P>
+        <button class="addtoCart-btn">ADD TO CART  <i class="fa-solid fa-chevron-right"></i></button>
+
+
+        </div>
+        <div class="item-card">
+            
+        <div id="blueStone" class="items-imgs">
+             </div>
+        <p>Silver Heart Necklace </p>
+        <P>550 EGP</P>
+        <button class="addtoCart-btn">ADD TO CART <i class="fa-solid fa-chevron-right"></i></button>
+
+        </div>
+        <div class="item-card">
+            
+            <div id="ringSet" class="items-imgs"> </div>
+            <p>Faux Pearl Ring Set</p>
+            <P>490 EGP</P>
+            <button class="addtoCart-btn">ADD TO CART <i class="fa-solid fa-chevron-right"></i></button>
+
+        </div>
+        <div class="item-card">
+
+            <div id="goldStone" class="items-imgs"> </div>
+            <p>Golden Stone necklace </p>
+            <P>150 EGP</P>
+            <button class="addtoCart-btn">ADD TO CART  <i class="fa-solid fa-chevron-right"></i></button>
+
+        </div>
+
+    </div>
+
+    <div class="explore-cont">
+        <h1>explore</h1>
+        <div class="exploreItms-cont">
+            <div id="exploreLeft" class="explore-card">
+                <img src="../img/necklace.jpg">
+                <button class="neckLace-btn">NECKLACES <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div id="exploreLeft" class="explore-card">
+                <img src="../img/men.jpg">
+                <button class="neckLace-btn">Men's Collection <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div id="exploreRight" class="explore-card">
+                <img src="../img/rings.jpg">
+                <button class="neckLace-btn">Rings & bracelets <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div id="exploreRight" class="explore-card">
+                <img src="../img/earring.jpg">
+                <button class="neckLace-btn">Earrings <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+        </div>
+        </div>
+        <div class="footer">
+            <div>
+                <img src="../img/index logo.png">
+            </div>
+            <div class="footer-items">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="Necklace.html">Necklaces</a></li>
+                    <li><a href="#">Rings & bracelets</a></li>
+                    <li><a href="#">Earrings</a></li>
+                    <li><a href="#">Men's Collection </a> </li>
+                </ul>
+
+            </div>
+            <div class="footer-items">
+                <h3>company</h3>
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">partnerships</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-items">
+                <h3>Social media</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100092704443638"> <i class="fa-brands fa-facebook"></i> Facebook </a></li>
+                    <li><a href="https://www.instagram.com/najma.silver/"> <i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i> Tiktok</a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+        <hr>
+        <div> <p class="coprights"> &copy; All Rights Reserved </p></div>
+        
+
+  
+    <script src="../Script/najma.js"></script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+body {
+    width: 100%;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E3E3E5;
+}
+
+.NajmaLogo {
+    height: 65px;
+}
+
+.navLeft , .navRight {
+    display: flex;
+}
+
+.navOne-btns {
+    padding: 10px;
+    border: none;
+    background-color: #E3E3E5;
+    cursor: pointer;
+}
+
+.Search-wrapper {
+    background-color: #E3E3E5;
+    width: 50%;
+    margin-left: 200px;
+    padding: 10px;
+    display: flex;
+  
+}
+
+#SearchPopUp {
+    display: none;
+    position: absolute;
+    z-index: 5;
+}
+
+#yourUsername {
+  
+    right: 10%;
+    top: 17px;
+}
+
+.title {
+    position: absolute;
+    text-transform: uppercase;
+    top: 25%;
+    color: #E3E3E5;
+    font-size: 60px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.explore-btn {
+    position: absolute;
+    text-transform: uppercase;
+    top: 40%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    font-weight: lighter;
+    padding: 15px;
+    width: 10%;
+    background-color: #8294C4;
+    border: 1px solid #E3E3E5 ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.explore-btn:hover {
+    transform: scale(0.95);
+}
+
+.Search-wrapper button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #E3E3E5;
+}
+
+.search-input {
+    border: none;
+    width: 90%;
+    padding: 10px;
+}
+
+#profilePopUp {
+    width: 20%;
+    background-color:#E3E3E5 ;
+    position: absolute;
+    left: 70%;
+    padding: 40px;
+    display: none;
+    z-index: 5;
+    height: fit-content;
+    
+}
+
+.signInOrCreate-cont h2 , .signInOrCreate-cont p {
+    margin: 20px;
+
+
+}
+
+.SignInOrUp-btn {
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid transparent;
+    cursor: pointer;
+    background-color: #E3E3E5;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+
+}
+
+.SignInOrUp-btn:hover {
+    border-bottom: 3px solid #394867;
+   
+
+}
+
+.newCollections-cont {
+    background-color: #E3DFE0;
+}
+
+#signInPopUp {
+    width: 20%;
+    background-color:#E3DFE0 ;
+    padding: 40px;
+    position: absolute;
+    left: 70%;
+    text-align: center;
+    display: none;
+    z-index: 6;
+     
+}
+
+#CreateAcoountPopUp {
+    width: 20%;
+    background-color:#E3DFE0 ;
+    padding: 40px;
+    position: absolute;
+    left: 70%;
+    text-align: center;
+    z-index: 6;
+
+    
+     
+}
+
+#signIn-btn {
+    
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    background-color: #E3DFE0;
+    
+}
+
+#signIn-btn:hover {
+    border-bottom: 4px solid #394867;
+    transition: 0.6s;
+}
+
+.signIn-input {
+    margin: 5px;
+    padding: 15px;
+    border: 3px solid transparent;
+    background-color: #E3DFE0;
+    border-bottom: 3px solid #394867;
+    margin-bottom: 10px;
+
+}
+
+.signIn-input::placeholder {
+    text-transform: uppercase;
+
+}
+
+.signIn-cont h2  {
+  padding: 10px;
+}
+
+.signIn-cont a {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.signIn-cont a:hover {
+    color: blue;
+}
+
+.contWith-btns {
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    width: 80%;
+    border: 2px solid #394867;
+    background-color: #E3DFE0;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+
+   
+}
+
+.contWith-btns:hover {
+    background-color: #394867;
+    color: #E3DFE0;
+
+}
+
+.contWith-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Background {
+   background-color: #E3E3E5;
+    width: 100%;
+    height: 55vh;
+  
+    display: flex;
+    justify-content: center;
+
+ 
+ 
+
+}
+
+.backgroundImg {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+   
+}
+
+
+
+
+
+.navTwo {
+    display: flex;
+    justify-content: center;
+    
+    background-color: #394867;
+    box-shadow: 1px 8px rgba(0, 0, 0, 0.25);
+    
+}
+
+.navTwo-btns {
+    margin: 5px 5px 5px 50px;
+    cursor: pointer;
+    border: none;
+    background-color: #394867;
+    padding: 5px;
+    color: #e8ebf2;
+    border: 1px solid #394867;
+}
+
+.navTwo-btns:hover {
+    border-bottom: 1px solid #e8ebf2;
+    transition: 0.4s;
+}
+
+.h2-wrapper {
+    text-align: center;
+    padding-top: 40px;
+
+    background-color: #E3DFE0;
+}
+
+.h2-wrapper h2 {
+    font-weight: lighter;
+}
+
+
+
+.catalogItems-cont {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 200px;
+    text-align: center;
+ 
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.catalog-cont {
+   
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+
+    background-color: #E3DFE0;
+    
+ 
+    
+}
+
+.addtoCart-btn {
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    color: #E3DFE0;
+    background-color: #394867;
+    border:2px transparent;
+    width: 100%;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+    
+    transition: all 0.2s ease;
+    
+  
+        
+}
+
+.addtoCart-btn:hover {
+   color: #394867;
+   background-color: #E3DFE0;
+    transition: 0.3s;
+
+}
+
+
+
+.items-imgs{
+    align-self: center;
+    width: 270px;
+    height: 300px;
+  
+
+}
+
+.item-card p {
+    text-align: left;
+    padding: 10px;
+    color: #303030;
+}
+
+#blueStone {
+    background-image: url(../img/bluestone.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+   
+   
+}
+
+#blueStone:hover {
+    background-image: url(../img/bluestone2.jpg);
+}
+
+#greenStone {
+    background-image: url(../img/greenstone2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+}
+
+#greenStone:hover {
+    background-image: url(../img/greenstone.jpg);
+}
+
+#goldStone {
+    background-image: url(../img/goldstone.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+
+}
+
+#goldStone:hover {
+    background-image: url(../img/goldstone2.jpg);
+}
+
+#crystalStone {
+    background-image: url(../img/diamond.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+
+}
+
+#crystalStone:hover {
+    background-image: url(../img/diamond2.jpg);
+}
+
+#CreateAcoountPopUp {
+    display: none;
+}
+
+.item-card {
+   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    width: 240px;
+    height:15%;
+    text-align: center;
+
+}
+
+
+.footer {
+    background-color: #E3E3E5;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer img {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.footer-items h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: left;
+}
+
+.footer-items {
+    padding: 15px;
+}
+
+.footer-items a {
+    color: #303030;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.footer-items a:hover {
+    border-bottom: 2px solid #394867;
+}
+
+
+
+
+
+.footer-items li, 
+.footer-items ul {
+    padding-top: 15px;
+    text-transform: capitalize;
+
+    list-style: none;
+    text-align: left;
+    color: #303030;
+   
+}
+
+.coprights {
+    text-align: center;
+    color: #303030;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
